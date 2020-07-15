@@ -20,7 +20,8 @@ RUN git clone -b $BRANCH https://github.com/filecoin-project/lotus.git &&\
 
 
 # runtime container stage
-FROM ubuntu:18.04
+FROM ubuntu:latest
+#FROM ubuntu:18.04
 
 # Instead of running apt-get just copy the certs and binaries that keeps the runtime image nice and small
 # RUN apt-get update && \
