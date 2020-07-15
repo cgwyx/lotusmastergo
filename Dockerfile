@@ -73,10 +73,6 @@ ENV FIL_PROOFS_USE_GPU_COLUMN_BUILDER=1
 
 ENV FIL_PROOFS_USE_GPU_TREE_BUILDER=1
 
-# time adjust
-ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-ntpdate ntp.aliyun.com
-
 
 WORKDIR /lotus
 
